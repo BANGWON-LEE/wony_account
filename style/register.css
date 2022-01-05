@@ -1,0 +1,109 @@
+html, body {
+	margin: 0;
+	padding: 0;
+    width: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul, li {
+	list-style: none;
+}
+
+.total_back{
+    margin: 12% auto;
+    display: block;
+    width: 100%;
+}
+
+.register_back {
+    margin : 0 auto;
+    width: 70%;
+    display: block;
+    position: relative;
+}
+
+.register_back2{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text_input {
+    font-size: 20px;
+}
+
+.register_text {
+    width: 230px;
+    height: 25px;
+  
+}
+
+.register_title {
+    margin-bottom: 60px;
+}
+
+
+
+.register_btn {
+    width: 120px;
+    height: 50px;
+    font-size: 23px;
+    background-color: coral;
+    color: #fff;
+    font-weight: bolder;
+    border: 1.3px solid chocolate;
+    border-radius: 2%;
+    margin-top: 50px;
+}
+
+
+.register_link {
+    display: block;
+    border: 1px solid chocolate;
+    width: 120px;
+    height: 30px;
+    padding : 15px 0;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 23px;
+    color: #fff;
+    background-color: coral;
+}
+
+#pw_check_title{
+    margin-left: 60px;
+}
+
+#name_text{
+    margin-left: 30px;
+}
+
+.register_text {
+    margin-right: 50px;
+    
+}
+
+.register_name{
+    margin-right: 110px;
+}
+
+#pass_text{
+    margin-right: 55px;
+}
+
+#pass_check_text{
+    margin-right: 170px;
+}
+
+#name_check_text{
+    margin-right: 115px;
+}
