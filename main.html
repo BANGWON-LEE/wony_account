@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" href="./air-datepicker/dist/css/datepicker.min.css">
     <script src="./jquery-3.1.1.min.js"></script>
     <script src="./air-datepicker/dist/js/datepicker.min.js"></script>
@@ -23,58 +24,84 @@
 <body>
     <div class="main_back">
         <div class="top_back">
-            <div class="account_title">
+            <div class="account_project">
                 <h1 class="user_title">
                     wony의 개인 장부
                 </h1>
             </div>
-            <div class="account_price">
-                남은 금액 : <span>1,000</span>
+            <div class="choice_calendar">
+                <form class="choice_date_form">
+                    <h5>날짜를 선택해주세요</h5>
+                    <input class="datepic" id="datepicker1" type="text"> -
+                    <input class="datepic" id="datepicker2" type="text">
+                </form>
             </div>
-            <form>
-                <div class="choice_calendar">
-                    <input id="datepicker1" type="text"> -
-                    <input id="datepicker2" type="text">
+            <div class="account_part_block">
+                <div class="account_price">
+                    <h4>남은 금액 </h4>
+                    <span id="detail_price">1,000</span>
                 </div>
-            </form>
-            <div class="write_btn">
-                <a href="#">
-                    작성하기
-                </a>
+                <div class="write_btn">
+                    <a id="write_btn_detail" href="#">
+                        작성하기
+                    </a>
+                </div>
             </div>
+            
         </div>
         <div class="write_content">
             <div class="write_content2">
-                <div class="choice_single_calendar">
-                    <p class="account_date">
-                        Date : 
-                    </p>
-                    <input id="datepicker" type="text">
-                </div>
-                <div class="account_write">
-                    <p class="content_title">
-                        title : 
-                    </p>
-                    <input type="text" class="account_title" >
-                </div>    
-                <div class="content_box">
-                    <p class="content_detail">
-                        Contents :
-                    </p>
-                    <textarea class="account_content"></textarea>
-                </div>
-                <div class="content_price">
-                    <p class="input_price">
-                        Price :
-                    </p>    
-                    <input type="number" class="this_price">
-                </div>
+                <form >
+                    <div class="choice_single_calendar">
+                        <p class="account_date">
+                            Date : 
+                        </p>
+                        <input id="datepicker" class="datepic" type="text">
+                    </div>
+                    <div class="account_write">
+                        <p class="content_title">
+                            title : 
+                        </p>
+                        <input type="text" class="account_input" >
+                    </div>    
+                    <div class="content_box">
+                        <p class="content_detail">
+                            Contents :
+                        </p>
+                        <textarea class="account_content"></textarea>
+                    </div>
+                    <div class="content_price">
+                        <p class="input_price">
+                            Price :
+                        </p>    
+                        <input type="number"  class="account_input">
+                    </div>
+                    <div class="btn_area"
+                    >
+                        <input type="button" value="등록" class="write_btn" id="account_write_btn">
+                    </div>
+                </form>
             </div>
         </div>
         <hr/>
         <div class="account_list_back">
-            <div class="">
-                
+            <div class="account_list_cnt">
+                <div class="account_list_title">
+                    <h2>
+                        우리 팸 저녁모임
+                    </h2>
+                </div>
+                <div class="account_list_date" >
+                    <p class="list_date_detail">2022-01-07</p>
+                </div>
+                <div class="account_list_content">
+                    <P class="list_content_detail">
+                        등심 1인분, 삼겹살 2인분, 냉면 4그릇  
+                    </P>
+                </div>
+                <div class="account_list_price">
+                    <p> - 56000원</p>
+                </div>
             </div>
         </div>
     </div>
