@@ -34,6 +34,7 @@
                     <h5>날짜를 선택해주세요</h5>
                     <input class="datepic" id="datepicker1" type="text"> -
                     <input class="datepic" id="datepicker2" type="text">
+                    <input type="button" value="검색" class="write_btn" id="account_search_btn">
                 </form>
             </div>
             <div class="account_part_block">
@@ -52,28 +53,34 @@
         <div class="write_content">
             <div class="write_content2">
                 <form >
-                    <div class="choice_single_calendar">
-                        <p class="account_date">
-                            Date : 
-                        </p>
-                        <input id="datepicker" class="datepic" type="text">
-                    </div>
                     <div class="account_write">
-                        <p class="content_title">
-                            title : 
+                        <p class="account_title_name">
+                            제목 : 
                         </p>
                         <input type="text" class="account_input" >
                     </div>    
+                    <div class="choice_single_calendar">
+                        <p class="account_title_name">
+                            날짜 : 
+                        </p>
+                        <input id="datepicker" class="datepic" type="text">
+                    </div>
                     <div class="content_box">
-                        <p class="content_detail">
-                            Contents :
+                        <p class="account_title_name">
+                            내용 :
                         </p>
                         <textarea class="account_content"></textarea>
                     </div>
                     <div class="content_price">
-                        <p class="input_price">
-                            Price :
-                        </p>    
+                        <p class="account_title_name" id="price_name">
+                            금액 :
+                        </p>
+                        <a class="btn_price" id="btn_price_plus">
+                            수입
+                        </a>
+                        <a class="btn_price" id="btn_price_minus">
+                            지출
+                        </a>    
                         <input type="number"  class="account_input">
                     </div>
                     <div class="btn_area"
@@ -87,7 +94,7 @@
         <div class="account_list_back">
             <div class="account_list_cnt">
                 <div class="account_list_title">
-                    <h2>
+                    <h2 class="account_list_title_detail">
                         우리 팸 저녁모임
                     </h2>
                 </div>

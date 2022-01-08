@@ -28,12 +28,17 @@ ol, ul, li {
 }
 
 .account_project{
-    margin-top: 25px;
+    margin-top: 65px;
+    display: block;
 }
 
 .choice_calendar {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 45px;
+}
+
+.user_title{
+    text-align: center;
 }
 
 .datepic {
@@ -43,7 +48,7 @@ ol, ul, li {
 .account_part_block {
     display: inline-block;
     float: right;
-    margin-top: 25px;
+    margin-top: 45px;
 }
 
 .account_price{
@@ -58,12 +63,13 @@ ol, ul, li {
 .write_btn{
     display: inline-block;
     width: 95px;
-    height: 31px;
+    height: 34px;
     border: 1px solid chocolate;
     background-color: coral;
     text-align: center;
     border-radius: 5%;
     margin-left: 90px;
+    cursor: pointer;
 }
 
 #write_btn_detail {
@@ -72,10 +78,18 @@ ol, ul, li {
     font-size: large;
 }
 
+#account_search_btn{
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
 .write_content{
     margin-top: 50px;
     border: 1px solid grey;
-    border-radius: 0.8%;
+    border-radius: 5px;
     margin-bottom: 25px;
 }
 
@@ -92,6 +106,8 @@ ol, ul, li {
 
 .choice_single_calendar{
     display: inline-block;
+    margin-left: 20px;
+    float: right;
 }
 
 .account_write{
@@ -108,7 +124,40 @@ ol, ul, li {
 }
 
 .content_price{
-    margin-top: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.account_title_name{
+    margin-bottom: 15px;
+}
+
+#price_name{
+    margin-right: 390px;
+}
+
+.btn_price {
+    width: 35px;
+    height: 32px;
+    padding: 7px 4px;
+    margin-right: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn_price_plus{
+    border: 1px solid mediumseagreen;
+    border-radius: 5px;
+    background-color: mediumaquamarine;
+    color: #fff;
+}
+
+#btn_price_minus{
+    display: none;
+    border: 1px solid rosybrown;
+    border-radius: 5px;
+    color: #fff;
+    background-color: salmon;
 }
 
 #account_write_btn {
@@ -121,4 +170,38 @@ ol, ul, li {
 
 .btn_area{
     text-align: center;
+}
+
+.account_list_back{
+    margin-top: 70px;
+    margin-bottom: 60px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.account_list_cnt {
+    width: 80%;
+    margin: 20px auto 20px;
+}
+
+.account_list_title{
+    display: inline-block;
+}
+
+.account_list_date{
+    display: inline-block;
+    float: right;
+}
+
+.account_list_content{
+    margin-top: 10px;
+    display: inline-block;
+    width: 82%;
+}
+
+.account_list_price{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: right;
 }
