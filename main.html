@@ -32,7 +32,7 @@
             <div class="choice_calendar">
                 <form class="choice_date_form">
                     <h5>날짜를 선택해주세요</h5>
-                    <input class="datepic" id="datepicker1" type="text"> -
+                    <input class="datepic" id="datepicker1" type="text"> ~
                     <input class="datepic" id="datepicker2" type="text">
                     <input type="button" value="검색" class="write_btn" id="account_search_btn">
                 </form>
@@ -42,13 +42,17 @@
                     <h4>남은 금액 </h4>
                     <span id="detail_price">1,000</span>
                 </div>
-                <div class="write_btn">
+                <div class="write_btn" id="write_btn_first">
                     <a id="write_btn_detail" href="#">
                         작성하기
                     </a>
                 </div>
+                <div class="write_btn" id="write_btn_close">
+                    <a id="write_btn_detail2" href="#">
+                        닫기
+                    </a>
+                </div>
             </div>
-            
         </div>
         <div class="write_content">
             <div class="write_content2">
@@ -108,6 +112,14 @@
                 </div>
                 <div class="account_list_price">
                     <p> - 56000원</p>
+                </div>
+                <div class="account_edit_remove">
+                    <a class="btn_edit_remove" id="btn_account_edit">
+                        수정
+                    </a>
+                    <a class="btn_edit_remove" id="btn_account_remove">
+                        삭제
+                    </a>    
                 </div>
             </div>
         </div>
