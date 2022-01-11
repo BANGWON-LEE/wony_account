@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/register.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/register.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+</head>
+<body>
+    <div class="total_back">
+        <div class="register_back">
+            <div class="register_back2">    
+                <div class="title_back">
+                    <h1 class="register_title">회원가입</h1>
+                </div>
+                <div>
+                    <form method="post" action="http://localhost:5001/api/register" class="register_form" onsubmit="return userRegister()">
+                        <p class="text_input">
+                            <span class="register_name">ID : </span>
+                            <input type="text" class="register_text" id="register_id" name="user_id">
+                        </p>
+                        <p class="text_input">
+                            <span class="register_name" >PW : </span>
+                            <input type="password" class="register_text " id="pass_text" name="user_pw" >
+                        </p>
+                        <p class="text_input">
+                            <span class="register_name" id="pw_check_title" >PW_check : </span>
+                            <input type="password" class="register_text " id="pass_check_text" >
+                        </p>
+                        <p class="text_input">
+                            <span class="register_name" id="name_text" >NAME : </span>
+                            <input type="text" class="register_text" id="register_name" name="user_name">
+                        </p>
+                        <button class="register_btn">
+                            가입
+                        </button>
+                    </form>
+                </div>
+            </div>    
+        </div>    
+    </div>
+</body>
+</html>
