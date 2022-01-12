@@ -16,7 +16,7 @@
                     <h1 class="register_title">회원가입</h1>
                 </div>
                 <div>
-                    <form method="post" action="http://localhost:5001/api/register" class="register_form" onsubmit="return userRegister()">
+                    <form  class="register_form" onsubmit="return false">
                         <p class="text_input">
                             <span class="register_name">ID : </span>
                             <input type="text" class="register_text" id="register_id" name="user_id">
@@ -33,7 +33,7 @@
                             <span class="register_name" id="name_text" >NAME : </span>
                             <input type="text" class="register_text" id="register_name" name="user_name">
                         </p>
-                        <button class="register_btn">
+                        <button class="register_btn" onclick="userRegister()">
                             가입
                         </button>
                     </form>

@@ -1,16 +1,16 @@
-function userRegister() {
+function userLogin() {
  
     console.log('시도 start');
     let form = document.createElement('form');
-    let mem_id = document.getElementById('register_id').value;
-    let mem_pw = document.getElementById('pass_text').value;
-    let mem_name = document.getElementById('register_name').value;
-
-    let info = [mem_id, mem_pw, mem_name ];
+    let mem_id = document.getElementById('login_id').value;
+    let mem_pw = document.getElementById('login_pw').value;
+    
+    
+    let info = [mem_id, mem_pw ];
 
     alert('회원가입 성공');
-    form.setAttribute('action', 'http://localhost:5001/api/register');
-    form.setAttribute('method', 'post');
+    form.setAttribute('action', 'http://localhost:5001/api/login');
+    form.setAttribute('method', 'get');
     document.characterSet="utf-8";
     
     for(let key in info) {
@@ -23,9 +23,9 @@ function userRegister() {
         form.appendChild(hiddenField);
     }
     
+    window.location.href='main.html';
     document.body.appendChild(form);
-    
+    sessionStorage.setItem("users", JSON.stringify(info));
     form.submit();
-    
     
 }
