@@ -8,7 +8,7 @@ function userLogin() {
     
     let info = [mem_id, mem_pw ];
 
-    alert('회원가입 성공');
+    alert('로그인 start');
     form.setAttribute('action', 'http://localhost:5001/api/login');
     form.setAttribute('method', 'get');
     document.characterSet="utf-8";
@@ -22,10 +22,9 @@ function userLogin() {
         console.log(info[key]);
         form.appendChild(hiddenField);
     }
-    
-    window.location.href='main.html';
-    document.body.appendChild(form);
+
     sessionStorage.setItem("users", JSON.stringify(info));
+    document.body.appendChild(form);
     form.submit();
     
 }
