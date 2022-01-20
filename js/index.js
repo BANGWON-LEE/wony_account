@@ -1,6 +1,6 @@
 function userLogin() {
  
-    console.log('시도 start');
+    // console.log('시도 start');
     let form = document.createElement('form');
     let mem_id = document.getElementById('login_id').value;
     let mem_pw = document.getElementById('login_pw').value;
@@ -8,7 +8,6 @@ function userLogin() {
     
     let info = [mem_id, mem_pw ];
 
-    alert('로그인 start');
     form.setAttribute('action', 'http://localhost:5001/api/login');
     form.setAttribute('method', 'get');
     document.characterSet="utf-8";
@@ -23,7 +22,7 @@ function userLogin() {
         form.appendChild(hiddenField);
     }
 
-    sessionStorage.setItem("users", JSON.stringify(info));
+    //sessionStorage.setItem("users", JSON.stringify(info));
     document.body.appendChild(form);
     form.submit();
     
