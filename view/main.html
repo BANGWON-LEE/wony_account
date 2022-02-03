@@ -9,6 +9,7 @@
     <script src="../jquery-3.1.1.min.js"></script>
     <script src="../air-datepicker/dist/js/datepicker.min.js"></script>
     <script src="../air-datepicker/dist/js/i18n/datepicker.ko.js"></script>
+    <script src="../js/main.js"></script>
     <style>
         * {
             margin: 0;
@@ -34,7 +35,7 @@
                     <h5>날짜를 선택해주세요</h5>
                     <input class="datepic" id="datepicker1" type="text"> ~
                     <input class="datepic" id="datepicker2" type="text">
-                    <input type="button" value="검색" class="write_btn" id="account_search_btn">
+                    <input type="button" value="검색" class="write_btn" id="account_search_btn" onclick="history_data()">
                 </form>
             </div>
             <div class="account_part_block">
@@ -42,59 +43,60 @@
                     <h4>남은 금액 </h4>
                     <span id="detail_price">1,000</span>
                 </div>
-                <div class="write_btn" id="write_btn_first">
-                    <a id="write_btn_detail" href="#">
+                <a id="write_btn_detail" href="#" onclick='content()'>
+                    <div class="write_btn" id="write_btn_first">
                         작성하기
-                    </a>
-                </div>
-                <div class="write_btn" id="write_btn_close">
-                    <a id="write_btn_detail2" href="#">
+                    </div>
+                </a>
+                <a id="write_btn_detail2" href="#" onclick='close_content()'>
+                    <div class="write_btn" id="write_btn_close">
                         닫기
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="write_content">
+        <div class="write_content" id="write_account">
             <div class="write_content2">
-                <form >
+                <form id="register_form" >
                     <div class="account_write">
                         <p class="account_title_name">
                             제목 : 
                         </p>
-                        <input type="text" class="account_input" >
+                        <input type="text" class="account_input" id="account_title" >
                     </div>    
                     <div class="choice_single_calendar">
                         <p class="account_title_name">
                             날짜 : 
                         </p>
-                        <input id="datepicker" class="datepic" type="text">
+                        <input id="datepicker" class="datepic" type="text" >
                     </div>
                     <div class="content_box">
                         <p class="account_title_name">
                             내용 :
                         </p>
-                        <textarea class="account_content"></textarea>
+                        <textarea class="account_content" id="account_content"></textarea>
                     </div>
                     <div class="content_price">
                         <p class="account_title_name" id="price_name">
                             금액 :
                         </p>
-                        <a class="btn_price" id="btn_price_plus">
+                        <a class="btn_price" id="btn_price_plus" onclick="minus_btn()" >
                             수입
                         </a>
-                        <a class="btn_price" id="btn_price_minus">
+                        <a class="btn_price" id="btn_price_minus" onclick="plus_btn()">
                             지출
                         </a>    
-                        <input type="number"  class="account_input">
+                        <input type="number"  class="account_input" id="my_price"> 
                     </div>
                     <div class="btn_area"
                     >
-                        <input type="button" value="등록" class="write_btn" id="account_write_btn">
+                        <input type="button" value="등록" class="write_btn" id="account_write_btn"
+                        onclick="register_data()">
                     </div>
                 </form>
             </div>
         </div>
-        <hr/>
+        <hr style="margin-top: 20px;"/>
         <div class="account_list_back">
             <div class="account_list_cnt">
                 <div class="account_list_title">

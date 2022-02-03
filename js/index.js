@@ -21,8 +21,8 @@ function userLogin() {
         console.log(info[key]);
         form.appendChild(hiddenField);
     }
-
-    //sessionStorage.setItem("users", JSON.stringify(info));
+    
+    sessionStorage.setItem("users", JSON.stringify(info));
     document.body.appendChild(form);
     form.submit();
     

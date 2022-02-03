@@ -55,7 +55,8 @@ ol, ul, li {
 .account_price{
     display: inline-block;
     text-align: center;
-    margin-right: 85px;
+    margin-right: 50px;
+    margin-left: 35px;
 }
 
 #detail_price {
@@ -78,12 +79,14 @@ ol, ul, li {
     color: #fff;
     font-weight: bold;
     font-size: large;
+    display: inline-block;
 }
 
 #write_btn_detail2 {
     color: #fff;
     font-weight: bold;
     font-size: large;
+    display: inline-block;
 }
 
 #write_btn_close{
@@ -103,6 +106,7 @@ ol, ul, li {
     border: 4.5px solid rgb(206, 89, 143);
     border-radius: 5px;
     margin-bottom: 25px;
+    display: none;
 }
 
 .account_input{
@@ -118,7 +122,7 @@ ol, ul, li {
 
 .choice_single_calendar{
     display: inline-block;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     float: right;
 }
 
@@ -146,6 +150,10 @@ ol, ul, li {
 
 #price_name{
     margin-right: 390px;
+}
+
+#my_price{
+    text-align: right;
 }
 
 .btn_price {
@@ -256,6 +264,7 @@ ol, ul, li {
     
     .top_back{
         line-height: 30px;
+        margin-bottom : 25px;
     }
     
     .account_project{
@@ -326,12 +335,14 @@ ol, ul, li {
         color: #fff;
         font-weight: bold;
         font-size: large;
+        display: inline-block;
     }
     
     #write_btn_detail2 {
         color: #fff;
         font-weight: bold;
         font-size: large;
+        display: inline-block;
     }
     
     #write_btn_close{
@@ -476,7 +487,7 @@ ol, ul, li {
     
     .account_list_price{
         display: inline-block;
-        margin-left: 20px;
+        /* margin-left: 20px; */
         margin-top: 10px;
         float: right;
     }
