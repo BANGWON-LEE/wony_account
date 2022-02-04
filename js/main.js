@@ -58,79 +58,57 @@ function register_data() {
     
 }
 
+// let result_value = document.getElementById('my_price');
+// let btn_price_plus = document.getElementById('btn_price_plus');
+// let btn_price_minus = document.getElementById('btn_price_minus');
+
+
+//account 수입과 지출 자동 + -로 하는 부분 (start)
+
 function minus_btn() {
-    let minus = document.getElementById('btn_price_minus');
-    let plus = document.getElementById('btn_price_plus');
-    let result_value = document.getElementById('my_price').value;
-
-    let tmp = '';
+    let btn_price_plus = document.getElementById('btn_price_plus');
+    let btn_price_minus = document.getElementById('btn_price_minus');
+    let result = document.getElementById('my_price');
+  
     
-    minus.style.display='inline';
-    plus.style.display='none';
-    tmp += '-'
-    result_value = tmp;
+    btn_price_minus.style.display='inline';
+    btn_price_plus.style.display='none';
 
+    console.log('click 성공');
 
+    result.onkeydown = function() {
+        this.value *= -1;
+
+        if(this.value > 0) {
+            this.value *= -1
+
+            return this.value
+        }
+    }
 }
 
-// 금액 버튼 누르면 - 값 나오도록 하기 2022/02/03
-
-
-// var autoHypenPhone = function(str){
-//     str = str.replace(/[^0-9]/g, '');
-//     var tmp = '';
-//     if( str.length < 4){
-//         return str;
-//     }else if(str.length < 7){
-//         tmp += str.substr(0, 3);
-//         tmp += '-';
-//         tmp += str.substr(3);
-//         return tmp;
-//     }else if(str.length < 11){
-//         tmp += str.substr(0, 3);
-//         tmp += '-';
-//         tmp += str.substr(3, 3);
-//         tmp += '-';
-//         tmp += str.substr(6);
-//         return tmp;
-//     }else{              
-//         tmp += str.substr(0, 3);
-//         tmp += '-';
-//         tmp += str.substr(3, 4);
-//         tmp += '-';
-//         tmp += str.substr(7);
-//         return tmp;
-//     }
-
-//     return str;
-// }
-
-
-// var phoneNum = document.getElementById('phoneNum');
-
-// phoneNum.onkeyup = function(){
-// console.log(this.value);
-// this.value = autoHypenPhone( this.value ) ;  
-// }
-
-
-
-
-
-
-
-
-
-
+//account 수입과 지출 자동 + -로 하는 부분 (end)
 
 function plus_btn() {
-    let minus = document.getElementById('btn_price_minus');
-    let plus = document.getElementById('btn_price_plus');
-    let result_value = document.getElementById('my_price');
+    let btn_price_plus = document.getElementById('btn_price_plus');
+    let btn_price_minus = document.getElementById('btn_price_minus');
+    let result = document.getElementById('my_price');
 
-    minus.style.display='none';
-    plus.style.display='inline';
-    result_value.style.hyphens = 'none';
+    btn_price_plus.style.display='inline';
+    btn_price_minus.style.display='none';
+    result.value = 0;
+
+
+
+    result.onkeydown = function() {
+        this.value * 1;
+
+        if(this.value < 0) {
+            this.value * -1
+
+            return this.value
+        }
+    }
 
 }
 
